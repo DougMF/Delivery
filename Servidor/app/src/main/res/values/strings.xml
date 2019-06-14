@@ -1,0 +1,17 @@
+<resources>
+    <string name="nomeApp">Servidor</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintSenha">Senha</string>
+    <string name="hintNome">Nome completo</string>
+    <string name="hintTelefone">Telefone</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnCadastro">CADASTRO</string>
+    <string name="btnLinkCadastro">Cadastrar-se</string>
+    <string name="btnLinkLogin">Voltar para a tela de Login</string>
+    <string name="boasVindas">Bem-vindo(a)</string>
+    <string name="btnSair">SAIR</string>
+    <string name="nome">Nome completo</string>
+    <string name="titulo_pedidos">Pedidos</string>
+    <string name="tabEspera">Em espera</string>
+    <string name="tabPreparo">Em preparo</string>
+</resources>

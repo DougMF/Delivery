@@ -1,0 +1,23 @@
+<resources>
+    <string name="nomeApp">Teste Delivery</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintSenha">Senha</string>
+    <string name="hintNome">Nome completo</string>
+    <string name="hintTelefone">Telefone</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnCadastro">CADASTRO</string>
+    <string name="btnLinkCadastro">Cadastrar-se</string>
+    <string name="btnLinkLogin">Voltar para a tela de Login</string>
+    <string name="boasVindas">Bem-vindo(a)</string>
+    <string name="btnSair">SAIR</string>
+    <string name="nome">Nome completo</string>
+    <string name="titulo_pedidos">Pedidos</string>
+    <string name="tabMeuPedido">Meu pedido</string>
+    <string name="tabComidas">Lanches</string>
+    <string name="tabBebidas">Bebidas</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

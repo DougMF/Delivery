@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="26dp"
+    android:layout_marginVertical="16dp">
+
+    <EditText
+        android:id="@+id/eTNovaSenha"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="Nova senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/eTNovaSenha1"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="Confirme a nova senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/eTSenhaAtual"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:hint="Senha atual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"> <!-- TODO: corrigir pixels -->
+
+        <Button
+            android:id="@+id/bCancelar"
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bSalvar"
+            android:text="Salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

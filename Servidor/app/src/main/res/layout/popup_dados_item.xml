@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="26dp"
+    android:layout_marginVertical="16dp"> <!-- TODO: Arrumar dp -->
+
+    <EditText
+        android:id="@+id/eTNome"
+        android:layout_width="match_parent"
+        android:hint="Nome"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eTDescricao"
+        android:layout_width="match_parent"
+        android:hint="Descrição"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eTPreco"
+        android:layout_width="match_parent"
+        android:inputType="numberSigned"
+        android:hint="Preço"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"> <!-- TODO: Arrumar dp -->
+
+        <Button
+            android:id="@+id/bCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+
+        <Button
+            android:id="@+id/bAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"/>
+    </LinearLayout>
+
+</LinearLayout>

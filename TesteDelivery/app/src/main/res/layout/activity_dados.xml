@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register"
+    tools:context=".DadosActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideUp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideDown"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <EditText
+        android:id="@+id/tVNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:hint="Nome"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTEmail"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@id/guideUp"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/eTEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTTelefone"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/tVNome" />
+
+    <EditText
+        android:id="@+id/eTTelefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:ems="11"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTCep"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/eTEmail" />
+
+    <EditText
+        android:id="@+id/eTCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:ems="8"
+        android:hint="CEP"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTEndereco"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/eTTelefone" />
+
+    <EditText
+        android:id="@+id/eTEndereco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:hint="Endereço"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTNumero"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/eTCep" />
+
+    <EditText
+        android:id="@+id/eTNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:hint="Número"
+        android:inputType="number"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@+id/eTBairro"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/eTEndereco" />
+
+    <EditText
+        android:id="@+id/eTBairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/input_register_bg"
+        android:hint="Bairro"
+        android:textColorHint="@color/input_register_hint"
+        app:layout_constraintBottom_toTopOf="@id/guideDown"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/eTNumero" />
+
+    <Button
+        android:id="@+id/bCancelar"
+        android:text="Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eTBairro"
+        app:layout_constraintLeft_toRightOf="@id/guideLeft"
+        app:layout_constraintVertical_bias="0.10"
+        android:textColor="@color/white"
+        android:background="#ea4c88"/>
+
+    <Button
+        android:id="@+id/bSalvar"
+        android:text="Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eTBairro"
+        app:layout_constraintRight_toLeftOf="@id/guideRight"
+        app:layout_constraintVertical_bias="0.10"
+        android:textColor="@color/white"
+        android:background="#ea4c88"/>
+</android.support.constraint.ConstraintLayout>
